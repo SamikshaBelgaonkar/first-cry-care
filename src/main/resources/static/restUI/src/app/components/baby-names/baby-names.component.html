@@ -1,0 +1,39 @@
+<div class="container" style="width: 50%; float:left">
+<h2 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  ">BABY NAMES</h2>
+<ul class="datasource">
+  <li *ngFor="let hero of datasource"
+    [class.selected]="hero === selectedHero"
+    (click)="onSelect(hero)">
+    <span class="badge">{{hero.id}}</span> {{hero.name}} 
+  </li>
+</ul>
+</div>
+<div *ngIf="selectedHero" style ="width: 50%; float:right" class="container">
+    <mat-card class="mat-elevation-z8" style="top:65px">
+    <h2 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">{{selectedHero.name | uppercase}} DETAILS</h2>
+    <div><span  >Serial Number: </span>{{selectedHero.id}}</div>
+    <div><span>Name: </span>{{selectedHero.name}}</div>
+    <div><span>Gender: </span>{{selectedHero.gender}}</div>
+    <div><span>Meaning: </span>{{selectedHero.meaning}}</div>
+  </mat-card>
+
+  </div>
+
+
+    <!-- <div>
+      <label>Name:
+        <input [(ngModel)]="selectedHero.name" placeholder="name"/>
+      </label>
+    </div> -->
+    <!-- <div>
+        <label>Gender:
+            <input [(ngModel)]="selectedHero.gender" placeholder="Gender"/>
+          </label>
+    </div>
+    <div>
+        <label>Meaning:
+            <input [(ngModel)]="selectedHero.meaning" placeholder="meaning"/>
+          </label>
+    </div> -->
+  
+  <!-- </div> -->

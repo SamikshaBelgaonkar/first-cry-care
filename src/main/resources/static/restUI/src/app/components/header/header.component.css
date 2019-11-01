@@ -1,0 +1,10 @@
+.mat-card{
+    background: #fb6f9e;
+    border-radius: 42px !important;
+
+}
+.mat-toolbar-row, .mat-toolbar-single-row{
+height: 43px;
+background: #fb6f9e;
+
+}

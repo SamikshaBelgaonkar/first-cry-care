@@ -1,0 +1,50 @@
+table {
+  width: 100%;
+}
+.datasource {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+.datasource li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: rgb(45, 225, 238);
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+.datasource li:hover {
+  color: rgb(252, 59, 255);
+  background-color: #DDD;
+  left: .1em;
+}
+.datasource li.selected {
+  background-color: rgb(255, 62, 175);
+  color: white;
+}
+.datasource li.selected:hover {
+  background-color: #BBD8DC;
+  color: white;
+}
+.datasource .badge {
+  display: inline-block;
+  font-size: small;
+  color: rgb(248, 145, 217);
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color:#405061;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+.asdf {
+  margin-left:auto; 
+  margin-right:0;
+}
